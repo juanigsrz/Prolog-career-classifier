@@ -19,6 +19,8 @@ hypothesize(albatross) :- albatross, !.
 hypothesize(unknown). /* no diagnosis */
 
 /* animal identification rules */
+
+    
 cheetah :- mammal,
     carnivore,
     verify(has_tawny_color),

@@ -1,0 +1,149 @@
+Agrimensura     Ciencias Exactas, Ingeniería y Agrimensura 	09 - Ciencias Exactas
+Arquitectura 	Arquitectura, Planeamiento y Diseño 	05 - Procesos Productivos, Diseño y Construcción
+Licenciatura en Ciencia Política 	Ciencia Política y RR. II. 	08 - Ciencias Sociales y Humanas
+Licenciatura en Comunicación Social 	Ciencia Política y RR. II. 	07 - Comunicación e Información
+Licenciatura en Relaciones Internacionales 	Ciencia Política y RR. II. 	08 - Ciencias Sociales y Humanas
+Profesor o Licenciado en Composición 	Humanidades y Artes 	06 - Docencia y Educación
+Licenciado en Canto de Cámara 	Humanidades y Artes 	06 - Docencia y Educación
+Licenciatura en Trabajo Social 	Ciencia Política y RR. II. 	08 - Ciencias Sociales y Humanas
+Ingeniería Agronómica 	Ciencias Agrarias 	04 - Producción Agropecuaria y Alimentaria
+Ingeniería Civil 	Ciencias Exactas, Ingeniería y Agrimensura 	09 - Ciencias Exactas
+Ingeniería Eléctrica 	Ciencias Exactas, Ingeniería y Agrimensura 	09 - Ciencias Exactas
+Ingeniería Electrónica 	Ciencias Exactas, Ingeniería y Agrimensura 	09 - Ciencias Exactas
+Ingeniería Industrial 	Ciencias Exactas, Ingeniería y Agrimensura 	09 - Ciencias Exactas
+Ingeniería Mecánica 	Ciencias Exactas, Ingeniería y Agrimensura 	09 - Ciencias Exactas
+Licenciatura en Física 	Ciencias Exactas, Ingeniería y Agrimensura 	09 - Ciencias Exactas
+Licenciatura en Matemática 	Ciencias Exactas, Ingeniería y Agrimensura 	09 - Ciencias Exactas
+Licenciatura en Ciencias de la Computación 	Ciencias Exactas, Ingeniería y Agrimensura 	09 - Ciencias Exactas
+Profesorado de Matemática 	Ciencias Exactas, Ingeniería y Agrimensura 	06 - Docencia y Educación
+Bioquímica 	Ciencias Bioquímicas y Farmacéuticas 	
+Farmacia 	Ciencias Bioquímicas y Farmacéuticas 	
+Licenciatura en Biotecnología 	Ciencias Bioquímicas y Farmacéuticas 	
+Licenciatura en Química 	Ciencias Bioquímicas y Farmacéuticas 	
+Profesorado en Química 	Ciencias Bioquímicas y Farmacéuticas 	
+Contador Público 	Ciencias Económicas y Estadística 	11 - Administración y Comercio
+Licenciatura en Administración 	Ciencias Económicas y Estadística 	11 - Administración y Comercio
+Licenciatura en Economía 	Ciencias Económicas y Estadística 	11 - Administración y Comercio
+Licenciatura en Estadística 	Ciencias Económicas y Estadística 	11 - Administración y Comercio
+Profesorado en Contabilidad 	Ciencias Económicas y Estadística 	06 - Docencia y Educación
+Profesorado en Economía 	Ciencias Económicas y Estadística 	06 - Docencia y Educación
+Profesorado en Estadística 	Ciencias Económicas y Estadística 	06 - Docencia y Educación
+Medicina 	Ciencias Médicas 	02 - Salud Humana
+Licenciatura en Enfermería 	Ciencias Médicas 	02 - Salud Humana
+Licenciatura en Fonoaudiología 	Ciencias Médicas 	02 - Salud Humana
+Abogacía 	Derecho 	12 - Derecho y Justicia
+Escribanía 	Derecho 	12 - Derecho y Justicia
+Odontología 	Odontología 	02 - Salud Humana
+Psicología 	Psicología 	02 - Salud Humana
+Profesorado en Psicología 	Psicología 	06 - Docencia y Educación
+Profesor en Canto Lírico 	Humanidades y Artes 	06 - Docencia y Educación
+Profesor o Licenciado en Órgano 	Humanidades y Artes 	06 - Docencia y Educación
+Profesor o Licenciado en Piano y Piano de Cámara 	Humanidades y Artes 	06 - Docencia y Educación
+Técnico Universitario en Batería 	Humanidades y Artes 	10 - Arte, Filosofía y Letras
+Técnico Universitario en Bandoneón 	Humanidades y Artes 	10 - Arte, Filosofía y Letras
+Licenciado en Dirección Coral 	Humanidades y Artes 	10 - Arte, Filosofía y Letras
+Profesor o Licenciado en Violoncelo 	Humanidades y Artes 	06 - Docencia y Educación
+Profesor o Licenciado en Violín 	Humanidades y Artes 	06 - Docencia y Educación
+Profesor o Licenciado en Viola 	Humanidades y Artes 	06 - Docencia y Educación
+Profesor o Licenciado en Tuba 	Humanidades y Artes 	06 - Docencia y Educación
+Profesor o Licenciado en Trompeta 	Humanidades y Artes 	06 - Docencia y Educación
+Profesor o Licenciado en Trompa 	Humanidades y Artes 	06 - Docencia y Educación
+Profesor o Licenciado en Trombón 	Humanidades y Artes 	06 - Docencia y Educación
+Educación Musical 	Humanidades y Artes 	06 - Docencia y Educación
+Traductor PÚblico Nacional de Portugués 	Humanidades y Artes 	10 - Arte, Filosofía y Letras
+Licenciatura en Portugués 	Humanidades y Artes 	10 - Arte, Filosofía y Letras
+Profesorado en Portugués 	Humanidades y Artes 	06 - Docencia y Educación
+Profesorado en Letras 	Humanidades y Artes 	06 - Docencia y Educación
+Licenciatura en Letras 	Humanidades y Artes 	10 - Arte, Filosofía y Letras
+Profesorado en FilosofÍa 	Humanidades y Artes 	06 - Docencia y Educación
+Licenciatura en FilosofÍa 	Humanidades y Artes 	10 - Arte, Filosofía y Letras
+Profesor en Ciencias de la Educación 	Humanidades y Artes 	06 - Docencia y Educación
+Licenciatura en Ciencias de la Educación 	Humanidades y Artes 	06 - Docencia y Educación
+Profesorado en AntropologÍa 	Humanidades y Artes 	06 - Docencia y Educación
+Licenciatura en AntropologÍa 	Humanidades y Artes 	08 - Ciencias Sociales y Humanas
+Profesorado en Historia 	Humanidades y Artes 	06 - Docencia y Educación
+Licenciatura en Historia 	Humanidades y Artes 	08 - Ciencias Sociales y Humanas
+Profesorado en Bellas Artes 	Humanidades y Artes 	06 - Docencia y Educación
+Licenciatura en Bellas Artes 	Humanidades y Artes 	10 - Arte, Filosofía y Letras
+Medicina Veterinaria 	Ciencias Veterinarias 	04 - Producción Agropecuaria y Alimentaria
+Profesor o Licenciado en Clarinete 	Humanidades y Artes 	06 - Docencia y Educación
+Profesor o Licenciado en Contrabajo 	Humanidades y Artes 	06 - Docencia y Educación
+Profesor o Licenciado en Fagot 	Humanidades y Artes 	06 - Docencia y Educación
+Profesor o Licenciado en Guitarra 	Humanidades y Artes 	06 - Docencia y Educación
+Profesor o Licenciado en Oboe 	Humanidades y Artes 	06 - Docencia y Educación
+Profesor o Licenciado en Flauta 	Humanidades y Artes 	06 - Docencia y Educación
+Agrimensura 	Ciencias Exactas, Ingeniería y Agrimensura 	09 - Ciencias Exactas
+Arquitectura 	Arquitectura, Planeamiento y Diseño 	05 - Procesos Productivos, Diseño y Construcción
+Licenciatura en Ciencia Política 	Ciencia Política y RR. II. 	08 - Ciencias Sociales y Humanas
+Licenciatura en Comunicación Social 	Ciencia Política y RR. II. 	07 - Comunicación e Información
+Licenciatura en Relaciones Internacionales 	Ciencia Política y RR. II. 	08 - Ciencias Sociales y Humanas
+Profesor o Licenciado en Composición 	Humanidades y Artes 	06 - Docencia y Educación
+Profesor en Canto de Cámara 	Humanidades y Artes 	06 - Docencia y Educación
+Licenciatura en Trabajo Social 	Ciencia Política y RR. II. 	08 - Ciencias Sociales y Humanas
+Ingeniería Civil 	Ciencias Exactas, Ingeniería y Agrimensura 	09 - Ciencias Exactas
+Ingeniería Eléctrica 	Ciencias Exactas, Ingeniería y Agrimensura 	09 - Ciencias Exactas
+Ingeniería Electrónica 	Ciencias Exactas, Ingeniería y Agrimensura 	09 - Ciencias Exactas
+Ingeniería Industrial 	Ciencias Exactas, Ingeniería y Agrimensura 	09 - Ciencias Exactas
+Ingeniería Mecánica 	Ciencias Exactas, Ingeniería y Agrimensura 	09 - Ciencias Exactas
+Licenciatura en Física 	Ciencias Exactas, Ingeniería y Agrimensura 	09 - Ciencias Exactas
+Licenciatura en Matemática 	Ciencias Exactas, Ingeniería y Agrimensura 	09 - Ciencias Exactas
+Licenciatura en Ciencias de la Computación 	Ciencias Exactas, Ingeniería y Agrimensura 	09 - Ciencias Exactas
+Profesorado de Matemática 	Ciencias Exactas, Ingeniería y Agrimensura 	06 - Docencia y Educación
+Bioquímica 	Ciencias Bioquímicas y Farmacéuticas 	
+Farmacia 	Ciencias Bioquímicas y Farmacéuticas 	
+Licenciatura en Biotecnología 	Ciencias Bioquímicas y Farmacéuticas 	
+Licenciatura en Química 	Ciencias Bioquímicas y Farmacéuticas 	
+Profesorado en Química 	Ciencias Bioquímicas y Farmacéuticas 	
+Contador Público 	Ciencias Económicas y Estadística 	11 - Administración y Comercio
+Licenciatura en Administración 	Ciencias Económicas y Estadística 	11 - Administración y Comercio
+Licenciatura en Economía 	Ciencias Económicas y Estadística 	11 - Administración y Comercio
+Licenciatura en Estadística 	Ciencias Económicas y Estadística 	11 - Administración y Comercio
+Profesorado en Contabilidad 	Ciencias Económicas y Estadística 	06 - Docencia y Educación
+Profesorado en Economía 	Ciencias Económicas y Estadística 	06 - Docencia y Educación
+Profesorado en Estadística 	Ciencias Económicas y Estadística 	06 - Docencia y Educación
+Medicina 	Ciencias Médicas 	02 - Salud Humana
+Licenciatura en Enfermería 	Ciencias Médicas 	02 - Salud Humana
+Licenciatura en Fonoaudiología 	Ciencias Médicas 	02 - Salud Humana
+Técnico universitario con terminalidades 	Instituto Politécnico Superior 	09 - Ciencias Exactas
+Abogacía 	Derecho 	12 - Derecho y Justicia
+Escribanía 	Derecho 	12 - Derecho y Justicia
+Odontología 	Odontología 	02 - Salud Humana
+Psicología 	Psicología 	02 - Salud Humana
+Profesorado en Psicología 	Psicología 	06 - Docencia y Educación
+Profesor en Canto Lírico 	Humanidades y Artes 	06 - Docencia y Educación
+Profesor o Licenciado en Órgano 	Humanidades y Artes 	06 - Docencia y Educación
+Profesor o Licenciado en Piano y Piano de Cámara 	Humanidades y Artes 	06 - Docencia y Educación
+Técnico Universitario en Batería 	Humanidades y Artes 	10 - Arte, Filosofía y Letras
+Técnico Universitario en Bandoneón 	Humanidades y Artes 	10 - Arte, Filosofía y Letras
+Licenciado en Dirección Coral 	Humanidades y Artes 	10 - Arte, Filosofía y Letras
+Profesor o Licenciado en Violoncelo 	Humanidades y Artes 	06 - Docencia y Educación
+Profesor o Licenciado en Violín 	Humanidades y Artes 	06 - Docencia y Educación
+Profesor o Licenciado en Viola 	Humanidades y Artes 	06 - Docencia y Educación
+Profesor o Licenciado en Tuba 	Humanidades y Artes 	06 - Docencia y Educación
+Profesor o Licenciado en Trompeta 	Humanidades y Artes 	06 - Docencia y Educación
+Profesor o Licenciado en Trompa 	Humanidades y Artes 	06 - Docencia y Educación
+Profesor o Licenciado en Trombón 	Humanidades y Artes 	06 - Docencia y Educación
+Educación Musical 	Humanidades y Artes 	06 - Docencia y Educación
+Traductor PÚblico Nacional de Portugués 	Humanidades y Artes 	10 - Arte, Filosofía y Letras
+Licenciatura en Portugués 	Humanidades y Artes 	10 - Arte, Filosofía y Letras
+Profesorado en Portugués 	Humanidades y Artes 	06 - Docencia y Educación
+Profesorado en Letras 	Humanidades y Artes 	06 - Docencia y Educación
+Licenciatura en Letras 	Humanidades y Artes 	10 - Arte, Filosofía y Letras
+Profesorado en FilosofÍa 	Humanidades y Artes 	06 - Docencia y Educación
+Licenciatura en FilosofÍa 	Humanidades y Artes 	10 - Arte, Filosofía y Letras
+Profesor en Ciencias de la Educación 	Humanidades y Artes 	06 - Docencia y Educación
+Licenciatura en Ciencias de la Educación 	Humanidades y Artes 	06 - Docencia y Educación
+Profesorado en AntropologÍa 	Humanidades y Artes 	06 - Docencia y Educación
+Licenciatura en AntropologÍa 	Humanidades y Artes 	08 - Ciencias Sociales y Humanas
+Profesorado en Historia 	Humanidades y Artes 	06 - Docencia y Educación
+Licenciatura en Historia 	Humanidades y Artes 	08 - Ciencias Sociales y Humanas
+Profesorado en Bellas Artes 	Humanidades y Artes 	06 - Docencia y Educación
+Licenciatura en Bellas Artes 	Humanidades y Artes 	10 - Arte, Filosofía y Letras
+Medicina Veterinaria 	Ciencias Veterinarias 	04 - Producción Agropecuaria y Alimentaria
+Profesor o Licenciado en Clarinete 	Humanidades y Artes 	06 - Docencia y Educación
+Profesor o Licenciado en Contrabajo 	Humanidades y Artes 	06 - Docencia y Educación
+Profesor o Licenciado en Fagot 	Humanidades y Artes 	06 - Docencia y Educación
+Profesor o Licenciado en Guitarra 	Humanidades y Artes 	06 - Docencia y Educación
+Profesor o Licenciado en Oboe 	Humanidades y Artes 	06 - Docencia y Educación
+Profesor o Licenciado en Flauta 	Humanidades y Artes 	06 - Docencia y Educación
+Licenciatura en Recursos Naturales 	Ciencias Agrarias 	03 - Recursos Naturales y Medio Ambiente
