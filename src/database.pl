@@ -33,16 +33,16 @@ ingenieria :- agropecuaria.
 
 
 /* Carreras */
-arquitectura :- (de_campo, !; industria, !), verify(disenio).
-ciencias_politicas :- (oficina, !;institucional, !).
-comunicacion_social :- (oficina, !;institucional, !).
-relaciones_internacionales :- (oficina, !;institucional, !).
-ingenieria_civil :- (ingenieria, !;oficina, !;industria, !).
-ciencias_de_la_computacion :- (oficina, !;investigacion, !;industria, !;ingenieria, !).
-medicina :- (de_campo, !;investigacion, !;industria, !;oficina, !).
-abogacia :- (oficina, !;institucional, !).
-economia :- (oficina, !;investigacion, !;industria, !;institucional, !).
-agrimensura :- (de_campo, !; investigacion, !; industria, !; ingenieria, !), verify(plantas).
+arquitectura :- (de_campo, !; industria, !), verify(edificaciones).
+ciencias_politicas :- (oficina, !;institucional, !), verify(habilidades_sociales).
+comunicacion_social :- (oficina, !;institucional, !), verify(habilidades_sociales).
+relaciones_internacionales :- (oficina, !;institucional, !), verify(habilidad_sociales).
+ingenieria_civil :- (ingenieria, !;oficina, !;industria, !), verify(edificaciones).
+ciencias_de_la_computacion :- (oficina, !;investigacion, !;industria, !;ingenieria, !), verify(informatica).
+medicina :- (de_campo, !;investigacion, !;industria, !;oficina, !), verify(biologia).
+abogacia :- (oficina, !;institucional, !), verify(asuntos_legales).
+economia :- (oficina, !;investigacion, !;industria, !;institucional, !), verify(asuntos_legales).
+agrimensura :- (de_campo, !; investigacion, !; industria, !; ingenieria, !), verify(edificaciones).
 
 
 hypothesize(agrimensura) :- agrimensura, !.
@@ -56,3 +56,5 @@ hypothesize(medicina) :- medicina, !.
 hypothesize(abogacia) :- abogacia, !.
 hypothesize(economia) :- economia, !.
 hypothesize(unknown).
+
+/* Nueva información */

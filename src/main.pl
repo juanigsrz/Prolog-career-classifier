@@ -11,14 +11,22 @@ carrera_j :- tipos_de_trabajo_para_carrera_j,
    carrer identification game.
    start with ?- go. */
 
-add(S) :- open('database.pl', append, Stream),
-          write(Stream, 'hypothesize('),
-          write(Stream, S),
-          write(Stream, ') :- '),
-          write(Stream, S),
-          write(Stream, '.'),
-          nl(Stream),
-          close(Stream).
+/* Esta funcion arma una lista de X tales que se sabe que yes(X) */
+formarLista(Y) :- yes(X), not(member(X,Y)), !, formarLista([X|Y]).
+formarLista(Y) :- /* write('done'), nl,*/ escupir(Y).
+
+/* Esta funcion imprime bonito verify(X) para cada X es una lista */
+escupir([X])   :- write('verify('), write(X), write(').'), true.
+escupir([X|Y]) :- write('verify('), write(X), write('), '), escupir(Y).
+
+add(S) :- append('database.pl'),
+          write('hypothesize('), write(S), write(') :- '), write(S), write(', !.'), nl,
+          write(S), write(' :- '), 
+          formarLista([]),
+          /* forall(yes(X), (write('verify('), write(X), write('), '))), 
+          write('!.'), */
+          nl,
+          told.
        
 go :- consult('database.pl'),
       hypothesize(Carrera),
