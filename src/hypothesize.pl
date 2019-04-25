@@ -1,3 +1,4 @@
+/* Hipotesis a testear sobre las carreras */
 hypothesize(agrimensura) :- agrimensura, !.
 hypothesize(arquitectura) :- arquitectura, !.
 hypothesize(ciencias_politicas) :- ciencias_politicas, !.

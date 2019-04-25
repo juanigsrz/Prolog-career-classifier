@@ -1,4 +1,4 @@
-/* Carreras */
+/* Carreras y sus caracteristicas que las definen */
 arquitectura :- (de_campo, !; industria, !), verify(edificaciones).
 ciencias_politicas :- (oficina, !;institucional, !), verify(habilidades_sociales).
 comunicacion_social :- (oficina, !;institucional, !), verify(habilidades_sociales).
