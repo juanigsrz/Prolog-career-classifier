@@ -8,4 +8,3 @@ hypothesize(ciencias_de_la_computacion) :- ciencias_de_la_computacion, !.
 hypothesize(medicina) :- medicina, !.
 hypothesize(abogacia) :- abogacia, !.
 hypothesize(economia) :- economia, !.
-hypothesize(enguel) :- enguel, !.
