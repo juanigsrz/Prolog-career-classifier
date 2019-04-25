@@ -19,28 +19,21 @@ formarLista(Y) :- /* write('done'), nl,*/ escupir(Y).
 escupir([X])   :- write('verify('), write(X), write(').'), true.
 escupir([X|Y]) :- write('verify('), write(X), write('), '), escupir(Y).
 
-add(S) :- append('database.pl'),
+add(S) :- append('hypothesize.pl'),
           write('hypothesize('), write(S), write(') :- '), write(S), write(', !.'), nl,
+          told,
+          append('carreras.pl'),
           write(S), write(' :- '), 
           formarLista([]),
-          /* forall(yes(X), (write('verify('), write(X), write('), '))), 
-          write('!.'), */
           nl,
           told.
        
-go :- consult('database.pl'),
-      hypothesize(Carrera),
-      (Carrera == unknown -> write('No encontramos la carrera adecuada, ingrese una nueva: '),
-                             flush_output(),
-                             read(S),
-                             add(S),
-                             write('Agregamos '),
-                             write(S),
-                             write(' a nuestra base de datos!'); 
-        write('Le recomendamos la carrera: '),
-        write(Carrera)),
-      nl,
-      undo.
+go :- consult('database.pl'), consult('hypothesize.pl'), consult('carreras.pl'),
+      hypothesize(Carrera), 
+      write('Le recomendamos la carrera: '), write(Carrera), nl, undo.
+go :- write('No encontramos la carrera adecuada, ingrese una nueva: '),
+      flush_output(), read(S), add(S),
+      write('Agregamos '), write(S), write(' a nuestra base de datos!'), nl, undo.
 
 
 /* how to ask questions */
