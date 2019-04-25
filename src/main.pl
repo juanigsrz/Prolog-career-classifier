@@ -11,16 +11,28 @@ carrera_j :- tipos_de_trabajo_para_carrera_j,
    carrer identification game.
    start with ?- go. */
 
-add :-
-      open('database.pl',append,Stream),
-      write(Stream,'hypothesize(asd).'),
-      nl(Stream),close(Stream),
-      include('database.pl').
+add(S) :- open('database.pl', append, Stream),
+          write(Stream, 'hypothesize('),
+          write(Stream, S),
+          write(Stream, ') :- '),
+          write(Stream, S),
+          write(Stream, '.'),
+          nl(Stream),
+          close(Stream).
+       /* include('database.pl'). */
+       
 go :- hypothesize(Carrera),
-    write('La carrera recomendada es: '),
-    (Carrera == unknown -> add;write(Carrera)),
-    nl,
-    undo.
+      (Carrera == unknown -> write('No encontramos la carrera adecuada, ingrese una nueva: '),
+                             flush_output(),
+                             read(S),
+                             add(S),
+                             write('Agregamos '),
+                             write(S),
+                             write(' a nuestra base de datos!'); 
+        write('Le recomendamos la carrera: '),
+        write(Carrera)),
+      nl,
+      undo.
 
 
 /* how to ask questions */

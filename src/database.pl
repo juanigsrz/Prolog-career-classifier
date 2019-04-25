@@ -56,5 +56,3 @@ hypothesize(medicina) :- medicina, !.
 hypothesize(abogacia) :- abogacia, !.
 hypothesize(economia) :- economia, !.
 hypothesize(unknown).
-hypothesize(asd).
-hypothesize(asd).
