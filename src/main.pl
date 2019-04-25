@@ -5,7 +5,7 @@ tipo_de_trabajo_i :- areas_de_tipo_de_trabajo_i ...,
 carrera_j :- tipos_de_trabajo_para_carrera_j,
     cosas_especificas_de_la_carrera_j.
 */
-:- include('database.pl').
+
 
 /*  carrer.pro
    carrer identification game.
@@ -19,9 +19,9 @@ add(S) :- open('database.pl', append, Stream),
           write(Stream, '.'),
           nl(Stream),
           close(Stream).
-       /* include('database.pl'). */
        
-go :- hypothesize(Carrera),
+go :- consult('database.pl'),
+      hypothesize(Carrera),
       (Carrera == unknown -> write('No encontramos la carrera adecuada, ingrese una nueva: '),
                              flush_output(),
                              read(S),
