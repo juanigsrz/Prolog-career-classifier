@@ -1,13 +1,14 @@
-*/
+/*
 area_n :- algo_especifico_de_area_n.
 tipo_de_trabajo_i :- areas_de_tipo_de_trabajo_i ...,
     cosa_especifica_del_tipo_de_trabajo_i.
 carrera_j :- tipos_de_trabajo_para_carrera_j,
     cosas_especificas_de_la_carrera_j.
-    */
+*/
+include(database.pl).
 
-/*  animal.pro
-   animal identification game.
+/*  carrer.pro
+   carrer identification game.
    start with ?- go. */
 
 go :- hypothesize(Carrera),
@@ -30,31 +31,50 @@ oficina :- sociales, !.
 oficina :- administracion.
 
 de_campo :- naturales, !.
-de_campo :- sociales, !.
+de_campo :- sociales.
 
 institucional :- educacion, !.
-institucional :- administracion, !.
+institucional :- administracion.
 
 investigacion :- educacion, !.
 investigacion :- exactas, !.
 investigacion :- naturales, !.
 investigacion :- sociales, !.
-investigacion :- agropecuaria, !.
+investigacion :- agropecuaria.
 
 industria :- exactas, !.
 industria :- sociales, !.
 industria :- administracion, !.
-industria :- agropecuaria, !.
+industria :- agropecuaria.
 
 ingenieria :- exactas, !.
-ingenieria :- agropecuaria, !.
+ingenieria :- agropecuaria.
 
 
 /* Carreras */
-Agrimensura
-Arquitectura
+arquitectura :- (de_campo, !; industria, !), verify(disenio).
+ciencias_politicas :- (oficina, !;institucional, !).
+comunicacion_social :- (oficina, !;institucional, !).
+relaciones_internacionales :- (oficina, !;institucional, !).
+ingenieria_civil :- (ingenieria, !;oficina, !;industria, !).
+ciencias_de_la_computacion :- (oficina, !;investigacion, !;industria, !;ingenieria, !).
+medicina :- (de_campo, !;investigacion, !;industria, !;oficina, !).
+abogacia :- (oficina, !;institucional, !).
+economia :- (oficina, !;investigacion, !;industria, !;institucional, !).
+agrimensura :- (de_campo, !; investigacion, !; industria, !; ingenieria, !), verify(plantas).
 
 
+hypothesize(agrimensura) :- agrimensura, !.
+hypothesize(arquitectura) :- arquitectura, !.
+hypothesize(ciencias_politicas) :- ciencias_politicas, !.
+hypothesize(comunicacion_social) :- comunicacion_social, !.
+hypothesize(relaciones_internacionales) :- relaciones_internacionales, !.
+hypothesize(ingenieria_civil) :- ingenieria_civil, !.
+hypothesize(ciencias_de_la_computacion) :- ciencias_de_la_computacion, !.
+hypothesize(medicina) :- medicina, !.
+hypothesize(abogacia) :- abogacia, !.
+hypothesize(economia) :- economia, !.
+hypothesize(unknown).
 
 
 /* how to ask questions */
