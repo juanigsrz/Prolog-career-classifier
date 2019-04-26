@@ -8,14 +8,14 @@ organizador :- industria,     verify('manejar_informacion').
 hacedor     :- industria,     verify('construir_soluciones'). 
 persuasor   :- industria,     verify('relaciones_sociales').
 pensador    :- investigacion, verify('manejar_informacion').
-ayudante    :- otros,         verify('relaciones_sociales').
-creador     :- otros,         verify('construir_soluciones').
+ayudante    :- otro,          verify('relaciones_sociales').
+creador     :- otro,          verify('construir_soluciones').
 
 /* Orientacion */
-exactas        :- (pensador, !; hacedor),      verify('').
-artisticas     :- (creador, !; hacedor),       verify('').
-humanas        :- ayudante,                    verify('').
-salud          :- ayudante,                    verify('').
-administrativa :- (organizador, !; persuasor), verify('').
+exactas        :- (pensador, !; hacedor),      verify('ciencia').
+artisticas     :- (creador, !; hacedor),       verify('cultura').
+humanas        :- ayudante,                    verify('cultura').
+salud          :- ayudante,                    verify('ciencia').
+administrativa :- (organizador, !; persuasor), verify('ciencia').
 
 
