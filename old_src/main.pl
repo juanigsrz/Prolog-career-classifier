@@ -17,13 +17,13 @@ escupir([X|Y]) :- write('verify('), write(X), write('), '), escupir(Y).
 add(S) :- append('hypothesize.pl'),
           write('hypothesize('), write(S), write(') :- '), write(S), write(', !.'), nl,
           told,
-          append('careers.pl'),
+          append('carreras.pl'),
           write(S), write(' :- '), 
           formarLista([]), nl,
           told.
 
 /* go() corre el identificador de carreras */
-go :- consult('database.pl'), consult('hypothesize.pl'), consult('careers.pl'),
+go :- consult('database.pl'), consult('hypothesize.pl'), consult('carreras.pl'),
       hypothesize(Carrera), 
       write('Le recomendamos la carrera: '), write(Carrera), nl, undo.
 go :- write('No encontramos la carrera adecuada, ingrese una nueva: '),

@@ -1,32 +1,21 @@
-/* Areas */
-educacion      :- verify(area_educacion), !.
-exactas        :- verify(area_exactas), !.
-naturales      :- verify(area_naturales), !.
-sociales       :- verify(area_sociales), !.
-administracion :- verify(area_administracion), !.
-agropecuaria   :- verify(area_agropecuaria), !.
+/* Ambitos de trabajo */
+industria     :- verify('ambito_industrial').
+investigacion :- verify('ambito_investigacional').
+otro          :- verify('otro_ambito').
 
-/* Tipos de trabajo */
-oficina :- exactas, !.
-oficina :- sociales, !.
-oficina :- administracion.
+/* Perfil personal */
+organizador :- industria,     verify('manejar_informacion').
+hacedor     :- industria,     verify('construir_soluciones'). 
+persuasor   :- industria,     verify('relaciones_sociales').
+pensador    :- investigacion, verify('manejar_informacion').
+ayudante    :- otros,         verify('relaciones_sociales').
+creador     :- otros,         verify('construir_soluciones').
 
-de_campo :- naturales, !.
-de_campo :- sociales.
+/* Orientacion */
+exactas        :- (pensador, !; hacedor),      verify('').
+artisticas     :- (creador, !; hacedor),       verify('').
+humanas        :- ayudante,                    verify('').
+salud          :- ayudante,                    verify('').
+administrativa :- (organizador, !; persuasor), verify('').
 
-institucional :- educacion, !.
-institucional :- administracion.
 
-investigacion :- educacion, !.
-investigacion :- exactas, !.
-investigacion :- naturales, !.
-investigacion :- sociales, !.
-investigacion :- agropecuaria.
-
-industria :- exactas, !.
-industria :- sociales, !.
-industria :- administracion, !.
-industria :- agropecuaria.
-
-ingenieria :- exactas, !.
-ingenieria :- agropecuaria.
