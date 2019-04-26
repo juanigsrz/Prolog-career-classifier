@@ -1,5 +1,5 @@
 /*
- * Sistema experto para orientacion vocacional
+ * Sistema experto para orientaci�n vocacional
  * Para comenzar use ?- go.
  */
 
@@ -13,8 +13,14 @@ obtenerHechos(Y) :- volcarHechos(Y).
 volcarHechos([X])   :- write('verify('), write(X), write(').'), true.
 volcarHechos([X|Y]) :- write('verify('), write(X), write('), '), volcarHechos(Y).
 
-/* add(S) agrega la hipotesis y carrera correspondiente de S */
-add(S) :- yes(_),
+/* add(S) agrega la hip�tesis y carrera correspondiente de S */
+add :-
+          write('No encontramos la carrera adecuada, ingrese una nueva: '),
+          flush_output(), read(S),
+          write('Agregamos '), write(S), write(' a nuestra base de datos!'),
+          append('hypothesize.pl'),
+          write('hypothesize('), write(S), write(') :- '), write(S), write(', !.'), nl,
+          told,
           append('careers.pl'),
           write(S), write(' :- '),
           obtenerHechos([]), nl,
@@ -23,15 +29,13 @@ add(S) :- yes(_),
           write('hypothesize('), write(S), write(') :- '), write(S), write(', !.'), nl,
           told.
 add(_) :- true. /* No agregarlo en caso de que no haya ningun yes() */
-          
+
 
 /* go corre el identificador de carreras */
 go :- consult('database.pl'), consult('hypothesize.pl'), consult('careers.pl'),
       hypothesize(Carrera),
       write('Le recomendamos la carrera: '), write(Carrera), nl, undo.
-go :- write('No encontramos la carrera adecuada, ingrese una nueva: '),
-      flush_output(), read(S), add(S),
-      write('Agregamos '), write(S), write(' a nuestra base de datos!'), nl, undo.
+go :- (yes(_) -> add;write('No encontramos la carrera adecuada')),nl, undo.
 
 /* ask(Q) le pregunta al usuario sobre Q */
 ask(Question) :-
