@@ -10,4 +10,3 @@ veterinaria  :- salud,                        verify('animales').
 medicina     :- salud,                        verify('investigar').
 hoteleria    :- (humanas, !; administrativa), verify('hoteles').
 marketing    :- administrativa,               verify('crear').
-pepa :- verify(relaciones_sociales), verify(construir_soluciones), verify(otro_ambito), verify(manejar_informacion), verify(ambito_investigacional).

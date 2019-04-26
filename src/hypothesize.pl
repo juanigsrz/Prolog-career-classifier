@@ -10,4 +10,3 @@ hypothesize(veterinaria)  :- veterinaria, !.
 hypothesize(medicina)     :- medicina, !.
 hypothesize(hoteleria)    :- hoteleria, !.
 hypothesize(marketing)    :- marketing, !.
-hypothesize(pepa) :- pepa, !.

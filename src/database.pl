@@ -17,5 +17,3 @@ artisticas     :- (creador, !; hacedor),       verify('cultura').
 humanas        :- ayudante,                    verify('cultura').
 salud          :- ayudante,                    verify('ciencia').
 administrativa :- (organizador, !; persuasor), verify('ciencia').
-
-

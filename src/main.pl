@@ -1,5 +1,5 @@
 /*
- * Sistema experto para orientación vocacional
+ * Sistema experto para orientacion vocacional
  * Para comenzar use ?- go.
  */
 
@@ -13,14 +13,17 @@ obtenerHechos(Y) :- volcarHechos(Y).
 volcarHechos([X])   :- write('verify('), write(X), write(').'), true.
 volcarHechos([X|Y]) :- write('verify('), write(X), write('), '), volcarHechos(Y).
 
-/* add(S) agrega la hipótesis y carrera correspondiente de S */
-add(S) :- append('hypothesize.pl'),
-          write('hypothesize('), write(S), write(') :- '), write(S), write(', !.'), nl,
-          told,
+/* add(S) agrega la hipotesis y carrera correspondiente de S */
+add(S) :- yes(_),
           append('careers.pl'),
           write(S), write(' :- '),
           obtenerHechos([]), nl,
+          told,
+          append('hypothesize.pl'),
+          write('hypothesize('), write(S), write(') :- '), write(S), write(', !.'), nl,
           told.
+add(_) :- true. /* No agregarlo en caso de que no haya ningun yes() */
+          
 
 /* go corre el identificador de carreras */
 go :- consult('database.pl'), consult('hypothesize.pl'), consult('careers.pl'),
@@ -40,7 +43,7 @@ ask(Question) :-
 /* Verificar la propiedad S */
 verify(S) :- ( yes(S) -> true ; (no(S) -> fail ; ask(S)) ).
 
-/* Eliminar todos los asserts al finalizar el programa */
+/* Eliminar todos los yes() y no() al finalizar el programa */
 undo :- retract(yes(_)), fail.
 undo :- retract(no(_)), fail.
 undo.
