@@ -1,5 +1,5 @@
 /* 
- * Indentificador de carreras universitarias
+ * Sistema experto para orientacion vocacional
  * Para comenzar use ?- go.
  */
 
