@@ -16,11 +16,15 @@ hypothesize(zebra) :- zebra, !.
 hypothesize(ostrich) :- ostrich, !.
 hypothesize(penguin) :- penguin, !.
 hypothesize(albatross) :- albatross, !.
-hypothesize(unknown). /* no diagnosis */
+hypothesize(unknown):- formarlista([]). /* no diagnosis */
+
+
+newanimal :-
+
 
 /* animal identification rules */
 
-    
+
 cheetah :- mammal,
     carnivore,
     verify(has_tawny_color),
@@ -77,8 +81,13 @@ ask(Question) :-
 /* How to verify something */
 verify(S) :-
     (yes(S) -> true ;
-    	(no(S) -> fail ; ask(S))
+	(no(S) -> fail ; ask(S))
     ).
+
+formarlista(Y):- yes(X), not(member(X,Y)), !, formarlista([X|Y]).
+formarlista(Y):- write('done'), nl, escupir(Y).
+escupir([X]):- write('verify('),write(X),write(').'), true.
+escupir([X|Y]):- write('verify('),write(X),write('), '), escupir(Y).
 
 /* undo all yes/no assertions */
 undo :- retract(yes(_)), fail.

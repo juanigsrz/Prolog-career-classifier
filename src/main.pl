@@ -1,30 +1,30 @@
-/* 
- * Sistema experto para orientacion vocacional
+/*
+ * Sistema experto para orientación vocacional
  * Para comenzar use ?- go.
  */
 
 :- dynamic yes/1, no/1.
 
-/* formarLista(Y) arma una lista de X tales que se sabe que yes(X) */
-formarLista(Y) :- yes(X), not(member(X,Y)), !, formarLista([X|Y]).
-formarLista(Y) :- escupir(Y).
+/* obtenerHechos arma una lista de X tales que se sabe que yes(X) */
+obtenerHechos(Y) :- yes(X), not(member(X,Y)), !, obtenerHechos([X|Y]).
+obtenerHechos(Y) :- volcarHechos(Y).
 
-/* escupir(L) imprime bonito verify(X) para cada X es una lista */
-escupir([X])   :- write('verify('), write(X), write(').'), true.
-escupir([X|Y]) :- write('verify('), write(X), write('), '), escupir(Y).
+/* volcarHechos agrega a nuestros archivos de BD el listado de hechos */
+volcarHechos([X])   :- write('verify('), write(X), write(').'), true.
+volcarHechos([X|Y]) :- write('verify('), write(X), write('), '), volcarHechos(Y).
 
-/* add(S) agrega la hipÃ³tesis y carrera correspondiente de S */ 
+/* add(S) agrega la hipótesis y carrera correspondiente de S */
 add(S) :- append('hypothesize.pl'),
           write('hypothesize('), write(S), write(') :- '), write(S), write(', !.'), nl,
           told,
           append('careers.pl'),
-          write(S), write(' :- '), 
-          formarLista([]), nl,
+          write(S), write(' :- '),
+          obtenerHechos([]), nl,
           told.
 
-/* go() corre el identificador de carreras */
+/* go corre el identificador de carreras */
 go :- consult('database.pl'), consult('hypothesize.pl'), consult('careers.pl'),
-      hypothesize(Carrera), 
+      hypothesize(Carrera),
       write('Le recomendamos la carrera: '), write(Carrera), nl, undo.
 go :- write('No encontramos la carrera adecuada, ingrese una nueva: '),
       flush_output(), read(S), add(S),
